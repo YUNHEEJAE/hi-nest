@@ -8,4 +8,5 @@ import { MoviesService } from './movies/movies.service';
   controllers: [MoviesController],
   providers: [MoviesService],
 })
+
 export class AppModule {}
