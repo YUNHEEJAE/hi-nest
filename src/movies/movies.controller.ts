@@ -32,13 +32,10 @@ export class MoviesController {
         return this.moviesService.deleteOne(movieId);
     }
 
-    // @Patch('/:id')
-    // path(@Param('id') movieId: String, @Body() updateData){
-    //     return {
-    //         updateMovie : movieId,
-    //         updateData, 
-    //     };
-    // }
+    @Patch('/:id')
+    path(@Param('id') movieId: string, @Body() updateData){
+        return this.moviesService.update(movieId, updateData);
+    }
 
 
 
